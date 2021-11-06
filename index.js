@@ -13,7 +13,7 @@ let score = 0;
 
 
 function welcomeMessage(){
-    alert("Please be select option carefully as you can on a button only one time! Thank you!")
+    alert("Please select option carefully as you can click on a button only one time! Thank you!")
 }
 
 window.addEventListener('load', loadGame);
