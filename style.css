@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --hue-neutral : 0;
+    --hue-correct : 120;
+    --hue-wrong: 0;  
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue-correct), 100%, 20%);
+}
+
+.container{
+    width: 600px;
+    max-width: 80%;
+    height: 500px;
+    background-color: hsl(var(--hue-neutral), 100%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px;
+    border-radius: 10px;
+}
+
+.question{
+    font-size: 27px;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.answers .btn{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.btn{
+    width: 140px;
+    height: 76px;
+    background-color: rgb(199, 130, 184);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.next-btn, .start-btn{
+    width: 180px;
+    height: 76px;
+    background-color: teal;
+}
+
+.next-btn{
+    background-color: deeppink;
+}
+
+.btn:hover{
+    border: 1.4px solid;
+}
+
+.answers.hide{
+    display: none;
+}
+
+.question.hide{
+    display: none;
+}
+
+.controls.hide{
+    display: none;
+}
+
+.next-btn.hide{
+    display: none;
+}
+
+.start-btn.hide{
+    display: none;
+}
+
